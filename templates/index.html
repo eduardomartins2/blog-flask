@@ -1,6 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+        window.onscroll = function() {
+          mostrarOcultarBotao();
+        };
+        
+        function mostrarOcultarBotao() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("btnTopo").style.display = "block";
+          } else {
+            document.getElementById("btnTopo").style.display = "none";
+          }
+        }
+        function voltarAoTopo() {
+          document.documentElement.scrollTop = 0;
+        }
+        function compartilharFacebook() {
+            window.open("https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(window.location));
+        }
+
+        function compartilharTwitter() {
+            window.open("https://twitter.com/intent/tweet?text=" + encodeURIComponent("Confira este site: " + window.location));
+        }
+
+        function compartilharLinkedIn() {
+            window.open("https://www.linkedin.com/shareArticle?mini=true&url=" + encodeURIComponent(window.location));
+        }
+        function compartilharWhatsApp() {
+            var textoCompartilhado = "Confira este site: " + window.location;
+            var urlWhatsApp = "https://api.whatsapp.com/send?text=" + encodeURIComponent(textoCompartilhado);
+            window.open(urlWhatsApp);
+        }
+        </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Melhores Jogos de PS2</title>
@@ -9,7 +41,7 @@
     <nav>
         <ul>
             <li><a href="/">Inicio</a></li>
-            <li><a href="/">Novidade</a></li>
+            <li><a href="/contato">Martins</a></li>
             <li><a href="/contato">Contato</a></li>
             <li><a href="/">Sobre</a></li>
           </ul>
@@ -144,8 +176,12 @@
         </p>
         <br/>
     </div>
+    <a class="botao-compartilhar" onclick="compartilharWhatsApp()">WhatsApp</a>
+    <a class="botao-compartilhar" onclick="compartilharFacebook()">Facebook</a>
+    <a class="botao-compartilhar" onclick="compartilharTwitter()">Twitter</a>
+    <a class="botao-compartilhar" onclick="compartilharLinkedIn()">LinkedIn</a>
 </body>
 <footer>
- 
+    <button onclick="voltarAoTopo()" id="btnTopo" title="Voltar ao Topo">Topo</button>
 </footer>
 </html>
