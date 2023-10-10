@@ -2,6 +2,10 @@ body{
     text-align: center;
     background-color: #cdddcd;
   }
+  p{
+    margin-left: 60px;
+    margin-right: 60px;
+  }
 div{
   font-size: large;
   font-family:'sans-serif', 'arial';
