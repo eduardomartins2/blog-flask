@@ -2,6 +2,22 @@
 <html lang="en">
 <head>
     <script>
+         window.onscroll = function() {
+          tornarBarraNavegacaoFixa();
+        };
+        
+        var barraNavegacao = document.querySelector(".barra-navegacao");
+        
+        var posicaoInicial = barraNavegacao.offsetTop;
+        
+        function tornarBarraNavegacaoFixa() {
+          if (window.pageYOffset >= posicaoInicial) {
+            barraNavegacao.style.position = "fixed";
+            barraNavegacao.style.top = "0";
+          } else {
+            barraNavegacao.style.position = "relative";
+          }
+        }
         window.onscroll = function() {
           mostrarOcultarBotao();
         };
@@ -38,13 +54,11 @@
     <title>Melhores Jogos de PS2</title>
     <link rel="shortcut icon" type="imagex/jpg" href="/static/img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='index.css')}}">
-    <nav>
-        <ul>
-            <li><a href="/">Inicio</a></li>
-            <li><a href="/contato">Martins</a></li>
-            <li><a href="/contato">Contato</a></li>
-            <li><a href="/">Sobre</a></li>
-          </ul>
+    <nav class="barra-navegacao">
+            <li><a class="item-menu" href="/">Inicio</a></li>
+            <li><a class="item-menu" href="/">Martins</a></li>
+            <li><a class="item-menu" href="/contato">Contato</a></li>
+            <li><a class="item-menu" href="/contato">Sobre</a></li>
     </nav>
 </head>
 <body>

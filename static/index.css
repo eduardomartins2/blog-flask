@@ -15,31 +15,6 @@ div{
   margin: 50px auto;
   box-shadow: 5px 5px 5px rgb(153, 161, 149);
 }
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color:rgb(140, 160, 135);
-}
-
-li {
-  float: left;
-  height: 100%;
-  width: 25%;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #111;
-}
 #btnTopo {
   display: none;
   position: fixed;
@@ -56,10 +31,40 @@ li a:hover {
   display: inline-block;
   margin: 5px;
   padding: 10px 15px;
-  background-color: #788a7a; /* LinkedIn blue */
+  background-color: #788a7a;
   color: #fff;
   text-decoration: none;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+ .barra-navegacao {
+  background-color:rgb(140, 160, 135);
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.item-menu {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  width: 100%;
+}
+.item-menu:hover {
+  background-color: #555;
+}
+nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:rgb(140, 160, 135);
+}
+li {
+  float: left;
+  width: 25%;
 }
