@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        window.onscroll = function() {
+         tornarBarraNavegacaoFixa();
+       };
+       
+       var barraNavegacao = document.querySelector(".barra-navegacao");
+       
+       var posicaoInicial = barraNavegacao.offsetTop;
+       
+       function tornarBarraNavegacaoFixa() {
+         if (window.pageYOffset >= posicaoInicial) {
+           barraNavegacao.style.position = "fixed";
+           barraNavegacao.style.top = "0";
+         } else {
+           barraNavegacao.style.position = "relative";
+         }
+       }
+       </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="shortcut icon" type="imagex/jpg" href="/static/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='mais.css')}}">
+
+    <nav class="barra-navegacao">
+        <li><a class="item-menu" href="/">Inicio</a></li>
+        <li><a class="item-menu" href="/mais">Mais</a></li>
+        <li><a class="item-menu" href="/contato">Contato</a></li>
+        <li><a class="item-menu" href="/sobre">Sobre</a></li>
+    </nav>
+</head>
+<body>
+    <img src="/static/img/eb.jpg"
+</body>
+</html>

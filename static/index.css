@@ -2,10 +2,10 @@ body{
     text-align: center;
     background-color: #cdddcd;
   }
-  p{
-    margin-left: 60px;
-    margin-right: 60px;
-  }
+p{
+    margin-left: 3%;
+    margin-right: 3%;
+}
 div{
   font-size: large;
   font-family:'sans-serif', 'arial';
@@ -38,7 +38,10 @@ div{
   border-radius: 5px;
   cursor: pointer;
 }
- .barra-navegacao {
+.barra-navegacao {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   background-color:rgb(140, 160, 135);
   overflow: hidden;
   position: fixed;
@@ -52,19 +55,8 @@ div{
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  width: 100%;
+  width: 22%;
 }
 .item-menu:hover {
   background-color: #555;
-}
-nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color:rgb(140, 160, 135);
-}
-li {
-  float: left;
-  width: 25%;
 }

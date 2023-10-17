@@ -11,5 +11,13 @@ def homepage():
 def contato():
     return render_template('contato.html')
 
+@app.route('/mais')
+def mais():
+    return render_template('mais.html')
+
+@app.route('/sobre')
+def sobre():
+    return render_template('sobre.html')
+
 if __name__ == "__main__":
     app.run(debug=True)

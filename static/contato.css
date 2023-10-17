@@ -1,33 +1,8 @@
 body {
     text-align: center;
     background-color: #cdddcd;
-  }
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color:rgb(140, 160, 135);
-  }
-  
-  li {
-    float: left;
-    height: 100%;
-    width: 25%;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #111;
-  }
-  div{
+}
+div{
     font-size: large;
     font-family:'sans-serif', 'arial';
     width: 75%;
@@ -35,4 +10,29 @@ body {
     background-color: rgb(189, 212, 189);
     margin: 50px auto;
     box-shadow: 5px 5px 5px rgb(153, 161, 149);
-  }
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgb(140, 160, 135);
+}
+  
+li {
+    float: left;
+    height: 100%;
+    width: 25%;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: #111;
+}
