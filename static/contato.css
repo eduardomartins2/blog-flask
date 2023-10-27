@@ -1,38 +1,36 @@
-body {
-    text-align: center;
-    background-color: #cdddcd;
-}
-div{
-    font-size: large;
-    font-family:'sans-serif', 'arial';
-    width: 75%;
-    height:80%;
-    background-color: rgb(189, 212, 189);
-    margin: 50px auto;
-    box-shadow: 5px 5px 5px rgb(153, 161, 149);
-}
-ul {
+.barra-navegacao {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     background-color:rgb(140, 160, 135);
-}
-  
-li {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .item-menu {
     float: left;
-    height: 100%;
-    width: 25%;
-}
-  
-li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    width: 22%;
+  }
+body{
+    text-align: center;
+    background-color: #cdddcd;
 }
-  
-li a:hover {
-    background-color: #111;
+p{
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+div{
+  font-size: large;
+  font-family:'sans-serif', 'arial';
+  width: 75%;
+  height:80%;
+  background-color: rgb(189, 212, 189);
+  margin: 50px auto;
+  box-shadow: 5px 5px 5px rgb(153, 161, 149);
 }
