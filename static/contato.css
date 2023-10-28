@@ -7,8 +7,8 @@
     position: fixed;
     top: 0;
     width: 100%;
-  }
-  .item-menu {
+}
+.item-menu {
     float: left;
     display: block;
     color: white;
@@ -16,7 +16,10 @@
     padding: 14px 16px;
     text-decoration: none;
     width: 22%;
-  }
+}
+.item-menu:hover {
+    background-color: #555;
+}
 body{
     text-align: center;
     background-color: #cdddcd;
@@ -33,4 +36,8 @@ div{
   background-color: rgb(189, 212, 189);
   margin: 50px auto;
   box-shadow: 5px 5px 5px rgb(153, 161, 149);
+}
+.link{
+  text-decoration: none;
+  color: black;
 }
