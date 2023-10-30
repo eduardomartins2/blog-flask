@@ -38,7 +38,8 @@ div{
   border-radius: 5px;
   cursor: pointer;
 }
-.barra-navegacao {
+nav{
+  text-align: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -46,7 +47,7 @@ div{
   overflow: hidden;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 98%;
 }
 .item-menu {
   float: left;
@@ -55,8 +56,13 @@ div{
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  height: auto;
   width: 22%;
 }
 .item-menu:hover {
   background-color: #555;
+}
+.link{
+  text-decoration: none;
+  color: black;
 }

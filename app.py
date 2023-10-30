@@ -11,9 +11,9 @@ def homepage():
 def contato():
     return render_template('contato.html')
 
-@app.route('/mais')
-def mais():
-    return render_template('mais.html')
+@app.route('/referencia')
+def referencia():
+    return render_template('referencia.html')
 
 @app.route('/sobre')
 def sobre():
